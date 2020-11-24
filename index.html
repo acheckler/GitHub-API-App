@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1> Find someone's GitHub Repository! </h1>
+    <form id = "js-form">
+        <label for = "username">Their username:</label>
+        <input type = "text" id = "username" placeholder = "Enter their username here" required>
+        <input type = "submit" value = "submit">
+    </form>
+
+   <section id="results" >
+      <h2>Search results</h2>
+      <ul id="results-list">
+      </ul>
+  </section>
+      
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="module">
+import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+</script>
+</body>
+</html>
